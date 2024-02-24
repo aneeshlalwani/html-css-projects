@@ -1,0 +1,57 @@
+/* ====== Importing font from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;400;500&family=Lato:wght@100;300;400;700;900&display=swap");
+
+/* ====== Universal Selector ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------- */
+/*          General Styles               */
+/* ------------------------------------- */
+/* ====== body selector ======*/
+body {
+    font-family: "Fraunces", serif;
+    font-family: "Lato", sans-serif;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 800px;
+    margin-top: 100px;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+th,
+td {
+    padding: 16px 24px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #087F5B;
+    color: #FFFFFF;
+    width: 25%;
+}
+
+thead tr {
+    background-color: #087F5B;
+    color: #FFFFFF;
+}
+
+thead th {
+    width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+
+tbody tr:nth-child(even) {
+    background-color: ghostwhite;
+}

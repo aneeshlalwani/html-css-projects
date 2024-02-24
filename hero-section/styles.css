@@ -1,0 +1,93 @@
+/*Importing font from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;400;500&family=Lato:wght@100;300;400;700;900&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+/*--------------------------------------*/
+/*===========================*/
+/*----- General Styles -----*/
+/*===========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    color: #444444;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header {
+    /* background-color: orangered; */
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    /* background-color: green; */
+}
+
+.header-container {
+    width: 1200px;
+    position: absolute;
+    /*In relation to Parent size*/
+    left: 50%;
+    top: 50%;
+    /*In relation to Element Size*/
+    transform: translate(-50%, -50%);
+    /* background-color: aqua;    */
+}
+
+.header-container-inner {
+    width: 50%;
+    /* background-color: black; */
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+    line-height: 1.05;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e67e22;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+}
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+}
+
+section {
+    padding: 96px 0;
+    background-color: #f7f7f7;
+}
