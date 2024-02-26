@@ -1,0 +1,251 @@
+/* Importing Font*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;400;500&display=swap');
+
+/*---------------------------------*/
+:root {
+    --white: hsl(0, 0%, 100%);
+    --text-color: hsl(228, 12%, 48%);
+    --pale: hsl(32, 37%, 92%);
+    --green: hsl(158, 36%, 37%);
+    --header-text: hsl(212, 23%, 14%);
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--pale);
+    font-family: 'Lato', sans-serif;
+}
+
+#header-img {
+    width: 60px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 10px;
+}
+
+#email-section {
+    margin-top: 100px;
+}
+
+section:before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#email-section h2 {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+}
+
+#form input[type="submit"] {
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.icon {
+    color: var(--green);
+    margin-right: 30px;
+}
+
+#features {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#video {
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product1 {
+    background-image: url("./images/product1.png");
+}
+
+.product2 {
+    background-image: url("./images/product2.png");
+}
+
+.product3 {
+    background-image: url("./images/product2.png");
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content {
+    /* font-family: ;*/
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-price {
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    ;
+    color: var(--green);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+
+.author {
+    letter-spacing: 5px;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.header {
+    font-family: 'Fraunces', serif;
+    /*to be imported*/
+    margin: 10px 0;
+    color: var(--header-text);
+}
+
+.add-button {
+    background-color: var(--green);
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/*======= Media Queries for responsiveness*/
+@media only screen and (min-width: 600px) {
+    #nav-bar {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (450px < width < 600px) {
+    .card {
+        font-size: 0.85rem;
+    }
+
+    .product-image {
+        height: 400px;
+    }
+}
+
+@media only screen and (450px <=width) {
+    .card {
+        display: flex;
+        max-width: 525px;
+    }
+
+    .inner-card {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .product-image {
+        width: 400px;
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+@media only screen and (width >=1000px) {
+    #video {
+        width: 70%;
+    }
+
+    .product-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
